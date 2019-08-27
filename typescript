@@ -1,0 +1,1622 @@
+脚本启动于 Mon 08 Jul 2019 01:41:44 PM CST
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/gpd[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/gpd[00m$ cd scripts/
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/gpd/scripts[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/gpd/scripts[00m$ ls
+get_grasps.py  moveit_arm_grasp.py  moveit_test.py  object_grasps.py  select_grasp.py
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/gpd/scripts[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/gpd/scripts[00m$ pyto[K[Kthon moveit_arm_grasp.py 
+Failed to import pyassimp, see https://github.com/ros-planning/moveit/issues/86 for more info
+Traceback (most recent call last):
+  File "moveit_arm_grasp.py", line 3, in <module>
+    import GraspConfigList.msg
+ImportError: No module named GraspConfigList.msg
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/gpd/scripts[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/gpd/scripts[00m$ python moveit_arm_grasp.py 
+Failed to import pyassimp, see https://github.com/ros-planning/moveit/issues/86 for more info
+Traceback (most recent call last):
+  File "moveit_arm_grasp.py", line 3, in <module>
+    import GraspConfigList.msg
+ImportError: No module named GraspConfigList.msg
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/gpd/scripts[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/gpd/scripts[00m$ python object_grasps.py 
+Traceback (most recent call last):
+  File "object_grasps.py", line 6, in <module>
+    from grasp_candidates_classifier.msg import GraspConfigList
+ImportError: No module named grasp_candidates_classifier.msg
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/gpd/scripts[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/gpd/scripts[00m$ cd
+]0;alienbob@alienbob-Alienware-15-R4: ~[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~[00m$ ls
+[0m[01;34mcaffe[0m  [01;34mcatkin_ws[0m  examples.desktop  [01;34mnew_ws[0m  [01;34mnlp[0m  [01;34mpcl-pcl-1.9.1[0m  [01;34msnap[0m  [01;34mws_moveit[0m  [01;34m下载[0m  [01;34m公共的[0m  [01;34m图片[0m  [01;34m文档[0m  [01;34m桌面[0m  [01;34m模板[0m  [01;34m视频[0m  [01;34m音乐[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~[00m$  cd catkin_ws/
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ ld
+ld：没有输入文件
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ cd [K[K[Kls
+[0m[01;34mbuild[0m  [01;34mbuild_isolated[0m  [01;34mdevel[0m  [01;34mdevel_isolated[0m  [01;34mel[0m  [01;34mel_isolated[0m  [01;34mgpg[0m  [01;34minstall[0m  [01;34msrc[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ cd srt\
+> ^C
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ cd src/
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src[00m$ lsd
+未找到 'lsd' 命令，有17 个相似命令
+lsd：未找到命令
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src[00m$ ls
+[0m[01;34maruco_ros[0m  [01;36mCMakeLists.txt[0m  [01;34measy_handeye[0m  [01;34mgpd[0m  [01;34mperception_pcl[0m  [01;34mserial[0m  [01;34muniversal_robot[0m  [01;34musb_cam[0m  [01;34mvision_visp[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src[00m$ cd[K[Kgit vlo[K[K[Kclone https://github.com/TAMS-Group/moveit_gpd_pick_object
+正克隆到 'moveit_gpd_pick_object'...
+remote: Enumerating objects: 99, done.[K
+展开对象中:   1% (1/99)   展开对象中:   2% (2/99)   展开对象中:   3% (3/99)   展开对象中:   4% (4/99)   展开对象中:   5% (5/99)   展开对象中:   6% (6/99)   展开对象中:   7% (7/99)   展开对象中:   8% (8/99)   展开对象中:   9% (9/99)   展开对象中:  10% (10/99)   展开对象中:  11% (11/99)   展开对象中:  12% (12/99)   展开对象中:  13% (13/99)   展开对象中:  14% (14/99)   展开对象中:  15% (15/99)   展开对象中:  16% (16/99)   展开对象中:  17% (17/99)   展开对象中:  18% (18/99)   展开对象中:  19% (19/99)   展开对象中:  20% (20/99)   展开对象中:  21% (21/99)   展开对象中:  22% (22/99)   展开对象中:  23% (23/99)   展开对象中:  24% (24/99)   展开对象中:  25% (25/99)   展开对象中:  26% (26/99)   展开对象中:  27% (27/99)   展开对象中:  28% (28/99)   展开对象中:  29% (29/99)   展开对象中:  30% (30/99)   展开对象中:  31% (31/99)   展开对象中:  32% (32/99)   展开对象中:  33% (33/99)   展开对象中:  34% (34/99)   展开对象中:  35% (35/99)   展开对象中:  36% (36/99)   展开对象中:  37% (37/99)   展开对象中:  38% (38/99)   展开对象中:  39% (39/99)   展开对象中:  40% (40/99)   展开对象中:  41% (41/99)   展开对象中:  42% (42/99)   展开对象中:  43% (43/99)   展开对象中:  44% (44/99)   remote: Total 99 (delta 0), reused 0 (delta 0), pack-reused 99[K
+展开对象中:  45% (45/99)   展开对象中:  46% (46/99)   展开对象中:  47% (47/99)   展开对象中:  48% (48/99)   展开对象中:  49% (49/99)   展开对象中:  50% (50/99)   展开对象中:  51% (51/99)   展开对象中:  52% (52/99)   展开对象中:  53% (53/99)   展开对象中:  54% (54/99)   展开对象中:  55% (55/99)   展开对象中:  56% (56/99)   展开对象中:  57% (57/99)   展开对象中:  58% (58/99)   展开对象中:  59% (59/99)   展开对象中:  60% (60/99)   展开对象中:  61% (61/99)   展开对象中:  62% (62/99)   展开对象中:  63% (63/99)   展开对象中:  64% (64/99)   展开对象中:  65% (65/99)   展开对象中:  66% (66/99)   展开对象中:  67% (67/99)   展开对象中:  68% (68/99)   展开对象中:  69% (69/99)   展开对象中:  70% (70/99)   展开对象中:  71% (71/99)   展开对象中:  72% (72/99)   展开对象中:  73% (73/99)   展开对象中:  74% (74/99)   展开对象中:  75% (75/99)   展开对象中:  76% (76/99)   展开对象中:  77% (77/99)   展开对象中:  78% (78/99)   展开对象中:  79% (79/99)   展开对象中:  80% (80/99)   展开对象中:  81% (81/99)   展开对象中:  82% (82/99)   展开对象中:  83% (83/99)   展开对象中:  84% (84/99)   展开对象中:  85% (85/99)   展开对象中:  86% (86/99)   展开对象中:  87% (87/99)   展开对象中:  88% (88/99)   展开对象中:  89% (89/99)   展开对象中:  90% (90/99)   展开对象中:  91% (91/99)   展开对象中:  92% (92/99)   展开对象中:  93% (93/99)   展开对象中:  94% (94/99)   展开对象中:  95% (95/99)   展开对象中:  96% (96/99)   展开对象中:  97% (97/99)   展开对象中:  98% (98/99)   展开对象中: 100% (99/99)   展开对象中: 100% (99/99), 完成.
+检查连接... 完成。
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src[00m$ ls
+[0m[01;34maruco_ros[0m  [01;36mCMakeLists.txt[0m  [01;34measy_handeye[0m  [01;34mgpd[0m  [01;34mmoveit_gpd_pick_object[0m  [01;34mperception_pcl[0m  [01;34mserial[0m  [01;34muniversal_robot[0m  [01;34musb_cam[0m  [01;34mvision_visp[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src[00m$ cd moveit_gpd_pick_object/
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/moveit_gpd_pick_object[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/moveit_gpd_pick_object[00m$ ls
+CMakeLists.txt  [0m[01;34mlaunch[0m  package.xml  [01;34msrc[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src/moveit_gpd_pick_object[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src/moveit_gpd_pick_object[00m$ mkfi[K[K[K[Kmkd[K[K[Kcd ..
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws/src[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws/src[00m$ cd [K[K[K cd[K[K[Kcd ..
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ cartk[K[K[K[Katkin_make
+Base path: /home/alienbob/catkin_ws
+Source space: /home/alienbob/catkin_ws/src
+Build space: /home/alienbob/catkin_ws/build
+Devel space: /home/alienbob/catkin_ws/devel
+Install space: /home/alienbob/catkin_ws/install
+[34m####[0m
+[34m#### Running command: [1m"cmake /home/alienbob/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/alienbob/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/alienbob/catkin_ws/install -G Unix Makefiles"[0m[34m in [1m"/home/alienbob/catkin_ws/build"[0m
+[34m####[0m
+-- Using CATKIN_DEVEL_PREFIX: /home/alienbob/catkin_ws/devel
+[0m-- Using CMAKE_PREFIX_PATH: /home/alienbob/catkin_ws/devel;/opt/ros/kinetic
+[0m-- This workspace overlays: /home/alienbob/catkin_ws/devel;/opt/ros/kinetic
+[0m-- Using PYTHON_EXECUTABLE: /home/alienbob/nlp/anaconda3/bin/python
+[0m-- Using Debian Python package layout
+[0m-- Using empy: /usr/bin/empy
+[0m-- Using CATKIN_ENABLE_TESTING: ON
+[0m-- Call enable_testing()
+[0m-- Using CATKIN_TEST_RESULTS_DIR: /home/alienbob/catkin_ws/build/test_results
+[0m-- Found gmock sources under '/usr/src/gmock': gmock will be built
+[0m-- Found gtest sources under '/usr/src/gmock': gtests will be built
+[0m-- Using Python nosetests: /home/alienbob/nlp/anaconda3/bin/nosetests
+[0m-- catkin 0.7.14
+[0m-- BUILD_SHARED_LIBS is on
+[0m-- [35m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0m-- [35m~~ [0m traversing 35 packages in topological order:
+[0m-- [35m~~ [0m - [1m[34maruco
+[0m-- [35m~~ [0m - [1m[34mperception_pcl [0m(metapackage)
+[0m-- [35m~~ [0m - [1m[34mrqt_easy_handeye
+[0m-- [35m~~ [0m - [1m[34mserial
+[0m-- [35m~~ [0m - [1m[34maruco_msgs
+[0m-- [35m~~ [0m - [1m[34muniversal_robot [0m(metapackage)
+[0m-- [35m~~ [0m - [1m[34muniversal_robots [0m(metapackage)
+[0m-- [35m~~ [0m - [1m[34mur_description
+[0m-- [35m~~ [0m - [1m[34mur_e_description
+[0m-- [35m~~ [0m - [1m[34mur_msgs
+[0m-- [35m~~ [0m - [1m[34mvision_visp [0m(metapackage)
+[0m-- [35m~~ [0m - [1m[34mpcl_conversions
+[0m-- [35m~~ [0m - [1m[34maruco_ros
+[0m-- [35m~~ [0m - [1m[34mpcl_ros
+[0m-- [35m~~ [0m - [1m[34mur_bringup
+[0m-- [35m~~ [0m - [1m[34mur_driver
+[0m-- [35m~~ [0m - [1m[34mur_e_gazebo
+[0m-- [35m~~ [0m - [1m[34mur_gazebo
+[0m-- [35m~~ [0m - [1m[34mur_modern_driver
+[0m-- [35m~~ [0m - [1m[34mur_kinematics
+[0m-- [35m~~ [0m - [1m[34musb_cam
+[0m-- [35m~~ [0m - [1m[34mvisp_bridge
+[0m-- [35m~~ [0m - [1m[34mvisp_camera_calibration
+[0m-- [35m~~ [0m - [1m[34mvisp_hand2eye_calibration
+[0m-- [35m~~ [0m - [1m[34measy_handeye
+[0m-- [35m~~ [0m - [1m[34mvisp_tracker
+[0m-- [35m~~ [0m - [1m[34mvisp_auto_tracker
+[0m-- [35m~~ [0m - [1m[34mgpd
+[0m-- [35m~~ [0m - [1m[34mmoveit_gpd_pick_object
+[0m-- [35m~~ [0m - [1m[34mur10_e_moveit_config
+[0m-- [35m~~ [0m - [1m[34mur10_moveit_config
+[0m-- [35m~~ [0m - [1m[34mur3_e_moveit_config
+[0m-- [35m~~ [0m - [1m[34mur3_moveit_config
+[0m-- [35m~~ [0m - [1m[34mur5_e_moveit_config
+[0m-- [35m~~ [0m - [1m[34mur5_moveit_config
+[0m-- [35m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34maruco[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(aruco_ros/aruco)
+[0m-- Found OpenCV: /opt/ros/kinetic (found suitable version "3.3.1", minimum required is "3") 
+[0m-- [1m[32m+++[0m processing catkin metapackage: 'perception_pcl[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(perception_pcl/perception_pcl)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mrqt_easy_handeye[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(easy_handeye/rqt_easy_handeye)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mserial[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(serial)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34maruco_msgs[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(aruco_ros/aruco_msgs)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- aruco_msgs: 2 messages, 0 services
+[0m-- [1m[32m+++[0m processing catkin metapackage: 'universal_robot[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/universal_robot)
+[0m-- [1m[32m+++[0m processing catkin metapackage: 'universal_robots[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/universal_robots)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_description[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_description)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_e_description[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_e_description)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_msgs[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_msgs)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- ur_msgs: 7 messages, 2 services
+[0m-- [1m[32m+++[0m processing catkin metapackage: 'vision_visp[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(vision_visp/vision_visp)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mpcl_conversions[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(perception_pcl/pcl_conversions)
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m--   thread
+[0m--   date_time
+[0m--   iostreams
+[0m--   serialization
+[0m--   chrono
+[0m--   atomic
+[0m--   regex
+[0m-- Checking for module 'libopenni2'
+[0m--   No package 'libopenni2' found
+[0m-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+[0m** WARNING ** io features related to openni2 will be disabled
+[0m** WARNING ** io features related to pcap will be disabled
+[0m** WARNING ** io features related to png will be disabled
+[0m-- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0m   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0mbut this file does not exist.  Possible reasons include:
+[0m* The file was deleted, renamed, or moved to another location.
+[0m* An install or uninstall procedure did not complete successfully.
+[0m* The installation package was faulty and contained
+[0m   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+[0mbut not all the files it references.
+[0m
+[0m-- The imported target "vtk" references the file
+[0m   "/usr/bin/vtk"
+[0mbut this file does not exist.  Possible reasons include:
+[0m* The file was deleted, renamed, or moved to another location.
+[0m* An install or uninstall procedure did not complete successfully.
+[0m* The installation package was faulty and contained
+[0m   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+[0mbut not all the files it references.
+[0m
+[0m-- looking for PCL_COMMON
+[0m-- looking for PCL_OCTREE
+[0m-- looking for PCL_IO
+[0m-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;/usr/lib/libOpenNI.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/libOpenNI.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL  
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34maruco_ros[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(aruco_ros/aruco_ros)
+[0m-- Found OpenCV: /opt/ros/kinetic (found version "3.3.1") 
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mpcl_ros[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(perception_pcl/pcl_ros)
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m--   thread
+[0m--   chrono
+[0m--   date_time
+[0m--   atomic
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m--   thread
+[0m--   date_time
+[0m--   iostreams
+[0m--   serialization
+[0m--   chrono
+[0m--   atomic
+[0m--   regex
+[0m-- Checking for module 'libopenni2'
+[0m--   No package 'libopenni2' found
+[0m-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+[0m** WARNING ** io features related to openni2 will be disabled
+[0m** WARNING ** io features related to pcap will be disabled
+[0m** WARNING ** io features related to png will be disabled
+[0m-- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0m   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0mbut this file does not exist.  Possible reasons include:
+[0m* The file was deleted, renamed, or moved to another location.
+[0m* An install or uninstall procedure did not complete successfully.
+[0m* The installation package was faulty and contained
+[0m   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+[0mbut not all the files it references.
+[0m
+[0m-- The imported target "vtk" references the file
+[0m   "/usr/bin/vtk"
+[0mbut this file does not exist.  Possible reasons include:
+[0m* The file was deleted, renamed, or moved to another location.
+[0m* An install or uninstall procedure did not complete successfully.
+[0m* The installation package was faulty and contained
+[0m   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+[0mbut not all the files it references.
+[0m
+[0m-- looking for PCL_COMMON
+[0m-- looking for PCL_CORE
+[0m-- Could NOT find PCL_CORE (missing:  PCL_CORE_LIBRARY PCL_CORE_INCLUDE_DIR) 
+[0m-- looking for PCL_KDTREE
+[0m-- looking for PCL_OCTREE
+[0m-- looking for PCL_SEARCH
+[0m-- looking for PCL_FEATURES
+[0m-- looking for PCL_SAMPLE_CONSENSUS
+[0m-- looking for PCL_FILTERS
+[0m-- looking for PCL_IO
+[0m-- looking for PCL_GEOMETRY
+[0m-- looking for PCL_SEGMENTATION
+[0m-- looking for PCL_SURFACE
+[0m-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;optimized;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_search.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_search.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_features.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_features.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;/usr/lib/libOpenNI.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL  
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_bringup[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_bringup)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_driver[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_driver)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_e_gazebo[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_e_gazebo)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_gazebo[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_gazebo)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_modern_driver[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_modern_driver)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m[33m[1mCMake Warning[0m at /opt/ros/kinetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+[0m  catkin_package() DEPENDS on 'ur_hardware_interface' but neither
+[0m  'ur_hardware_interface_INCLUDE_DIRS' nor 'ur_hardware_interface_LIBRARIES'
+[0m  is defined.
+[0m[36m[4mCall Stack (most recent call first):[0m
+[0m  /opt/ros/kinetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+[0m  universal_robot/ur_modern_driver/CMakeLists.txt:110 (catkin_package)
+[0m
+[0m
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur_kinematics[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur_kinematics)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34musb_cam[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(usb_cam)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mvisp_bridge[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(vision_visp/visp_bridge)
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   filesystem
+[0m--   program_options
+[0m--   system
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mvisp_camera_calibration[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(vision_visp/visp_camera_calibration)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- visp_camera_calibration: 4 messages, 1 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mvisp_hand2eye_calibration[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(vision_visp/visp_hand2eye_calibration)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- visp_hand2eye_calibration: 1 messages, 3 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34measy_handeye[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(easy_handeye/easy_handeye)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- easy_handeye: 2 messages, 3 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mvisp_tracker[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(vision_visp/visp_tracker)
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   filesystem
+[0m--   thread
+[0m--   system
+[0m--   chrono
+[0m--   date_time
+[0m--   atomic
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- visp_tracker: 7 messages, 1 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mvisp_auto_tracker[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(vision_visp/visp_auto_tracker)
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   filesystem
+[0m--   system
+[0m--   signals
+[0m--   regex
+[0m--   date_time
+[0m--   program_options
+[0m--   thread
+[0m--   chrono
+[0m--   atomic
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mgpd[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(gpd)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- Boost version: 1.58.0
+[0m-- Found the following Boost libraries:
+[0m--   system
+[0m--   filesystem
+[0m--   thread
+[0m--   date_time
+[0m--   iostreams
+[0m--   serialization
+[0m--   chrono
+[0m--   atomic
+[0m--   regex
+[0m-- Checking for module 'libopenni2'
+[0m--   No package 'libopenni2' found
+[0m-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+[0m** WARNING ** io features related to openni2 will be disabled
+[0m** WARNING ** io features related to pcap will be disabled
+[0m** WARNING ** io features related to png will be disabled
+[0m-- The imported target "vtkRenderingPythonTkWidgets" references the file
+[0m   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[0mbut this file does not exist.  Possible reasons include:
+[0m* The file was deleted, renamed, or moved to another location.
+[0m* An install or uninstall procedure did not complete successfully.
+[0m* The installation package was faulty and contained
+[0m   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+[0mbut not all the files it references.
+[0m
+[0m-- The imported target "vtk" references the file
+[0m   "/usr/bin/vtk"
+[0mbut this file does not exist.  Possible reasons include:
+[0m* The file was deleted, renamed, or moved to another location.
+[0m* An install or uninstall procedure did not complete successfully.
+[0m* The installation package was faulty and contained
+[0m   "/usr/lib/cmake/vtk-6.2/VTKTargets.cmake"
+[0mbut not all the files it references.
+[0m
+[0m-- Checking for module 'libopenni2'
+[0m--   No package 'libopenni2' found
+[0m-- Could NOT find OpenNI2 (missing:  OPENNI2_LIBRARY OPENNI2_INCLUDE_DIRS) 
+[0m** WARNING ** visualization features related to openni2 will be disabled
+[0m-- looking for PCL_COMMON
+[0m-- looking for PCL_KDTREE
+[0m-- looking for PCL_OCTREE
+[0m-- looking for PCL_SEARCH
+[0m-- looking for PCL_IO
+[0m-- looking for PCL_SAMPLE_CONSENSUS
+[0m-- looking for PCL_FILTERS
+[0m-- looking for PCL_GEOMETRY
+[0m-- looking for PCL_FEATURES
+[0m-- looking for PCL_SEGMENTATION
+[0m-- looking for PCL_SURFACE
+[0m-- looking for PCL_REGISTRATION
+[0m-- looking for PCL_RECOGNITION
+[0m-- looking for PCL_KEYPOINTS
+[0m-- looking for PCL_VISUALIZATION
+[0m-- looking for PCL_PEOPLE
+[0m-- looking for PCL_OUTOFCORE
+[0m-- looking for PCL_TRACKING
+[0m-- looking for PCL_APPS
+[0m-- Could NOT find PCL_APPS (missing:  PCL_APPS_LIBRARY) 
+[0m-- looking for PCL_MODELER
+[0m-- looking for PCL_IN_HAND_SCANNER
+[0m-- looking for PCL_POINT_CLOUD_EDITOR
+[0m-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;optimized;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_search.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_search.so;/usr/lib/libOpenNI.so;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_features.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_features.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_people.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_people.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;vtkImagingStencil;vtkCommonComputationalGeometry;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkImagingCore;vtkCommonExecutionModel;vtkFiltersAMR;vtkFiltersGeneral;vtkFiltersCore;vtkParallelCore;vtkIOLegacy;vtkIOCore;/usr/lib/x86_64-linux-gnu/libz.so;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingSources;vtkRenderingCore;vtkCommonColor;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkalglib;vtkFiltersGeometry;vtkFiltersSources;vtkFiltersModeling;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkInteractionStyle;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;vtkftgl;vtkRenderingVolume;vtkIOParallelNetCDF;vtkParallelMPI;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/hdf5/serial/lib/libhdf5_hl.so;vtkRenderingOpenGL;vtkIOLSDyna;vtkIOXML;vtkIOGeometry;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkLocalExample;vtkInfovisCore;vtkGeovisCore;vtkInfovisLayout;vtkViewsCore;vtkproj4;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkTestingGenericBridge;/usr/lib/libgl2ps.so;verdict;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkFiltersImaging;vtkIOMINC;vtkRenderingLOD;vtkViewsQt;vtkGUISupportQt;vtkViewsInfovis;vtkChartsCore;vtkRenderingContext2D;vtkRenderingLabel;vtkRenderingImage;vtkFiltersFlowPaths;vtkxdmf2;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkFiltersReebGraph;vtkViewsContext2D;vtkIOXdmf2;vtkIOAMR;vtkRenderingContextOpenGL;vtkImagingStatistics;vtkIOParallel;vtkFiltersParallel;vtkIONetCDF;vtkexoIIc;vtkGUISupportQtOpenGL;vtkIOParallelLSDyna;vtkFiltersParallelGeometry;vtkGUISupportQtWebkit;vtkIOPLY;vtkWrappingTools;vtkFiltersHyperTree;vtkRenderingVolumeOpenGL;vtkIOExodus;vtkIOPostgreSQL;vtkIOSQL;sqlite3;vtkWrappingJava;vtkFiltersParallelFlowPaths;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersParallelImaging;vtkRenderingParallelLIC;vtkRenderingLIC;vtkInteractionImage;vtkFiltersPython;vtkWrappingPythonCore;vtkIOParallelExodus;vtkFiltersGeneric;vtkIOVideo;vtkRenderingQt;vtkFiltersTexture;vtkIOInfovis;vtkGUISupportQtSQL;vtkRenderingFreeTypeOpenGL;vtkInfovisBoostGraphAlgorithms;vtkRenderingGL2PS;vtkIOGeoJSON;vtkFiltersVerdict;vtkViewsGeovis;vtkIOImport;vtkTestingIOSQL;vtkPythonInterpreter;vtkIOODBC;vtkIOEnSight;vtkIOMySQL;vtkRenderingMatplotlib;vtkDomainsChemistry;vtkIOExport;vtkFiltersParallelMPI;vtkIOParallelXML;vtkTestingRendering;vtkIOMPIParallel;vtkParallelMPI4Py;vtkFiltersSMP;vtkFiltersSelection;vtkIOVPIC;VPIC;vtkImagingMath;vtkImagingMorphological;vtkRenderingParallel;vtkRenderingFreeTypeFontConfig;vtkIOFFMPEG;vtkIOMPIImage;vtkIOGDAL  
+[0m-- gpd: 6 messages, 1 services
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mmoveit_gpd_pick_object[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(moveit_gpd_pick_object)
+[0m-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur10_e_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur10_e_moveit_config)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur10_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur10_moveit_config)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur3_e_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur3_e_moveit_config)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur3_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur3_moveit_config)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur5_e_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur5_e_moveit_config)
+[0m-- [1m[32m+++[0m processing catkin package: '[1m[34mur5_moveit_config[0m[0m'
+[0m-- [1m[34m==>[0m add_subdirectory(universal_robot/ur5_moveit_config)
+[0m-- Configuring done
+[0m-- Generating done
+[0m-- Build files have been written to: /home/alienbob/catkin_ws/build
+[0m[34m####[0m
+[34m#### Running command: [1m"make -j12 -l12"[0m[34m in [1m"/home/alienbob/catkin_ws/build"[0m
+[34m####[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target _aruco_msgs_generate_messages_check_deps_MarkerArray
+[  0%] Built target _aruco_msgs_generate_messages_check_deps_Marker
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target aruco_ros_gencfg
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  1%] Built target serial
+[  2%] Built target aruco
+[  2%] Built target _ur_msgs_generate_messages_check_deps_ToolDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_MasterboardDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_Analog
+[  2%] Built target _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_RobotModeDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_SetIO
+[  2%] Built target _ur_msgs_generate_messages_check_deps_IOStates
+[  2%] Built target _ur_msgs_generate_messages_check_deps_Digital
+[  2%] Built target _ur_msgs_generate_messages_check_deps_SetPayload
+[  2%] Built target roscpp_generate_messages_py
+[  2%] Built target rosgraph_msgs_generate_messages_eus
+[  2%] Built target sensor_msgs_generate_messages_nodejs
+[  2%] Built target rosgraph_msgs_generate_messages_py
+[  2%] Built target roscpp_generate_messages_cpp
+[  2%] Built target roscpp_generate_messages_eus
+[  2%] Built target roscpp_generate_messages_nodejs
+[  2%] Built target rosgraph_msgs_generate_messages_nodejs
+[  2%] Built target rosgraph_msgs_generate_messages_lisp
+[  2%] Built target rosgraph_msgs_generate_messages_cpp
+[  2%] Built target sensor_msgs_generate_messages_py
+[  2%] Built target sensor_msgs_generate_messages_eus
+[  2%] Built target roscpp_generate_messages_lisp
+[  2%] Built target sensor_msgs_generate_messages_cpp
+[  2%] Built target sensor_msgs_generate_messages_lisp
+[  2%] Built target visualization_msgs_generate_messages_nodejs
+[  2%] Built target visualization_msgs_generate_messages_py
+[  2%] Built target tf2_msgs_generate_messages_py
+[  2%] Built target visualization_msgs_generate_messages_cpp
+[  2%] Built target tf2_msgs_generate_messages_lisp
+[  2%] Built target tf2_msgs_generate_messages_eus
+[  2%] Built target actionlib_msgs_generate_messages_eus
+[  2%] Built target actionlib_generate_messages_lisp
+[  2%] Built target tf_generate_messages_eus
+[  2%] Built target tf2_msgs_generate_messages_cpp
+[  2%] Built target tf_generate_messages_cpp
+[  2%] Built target actionlib_msgs_generate_messages_cpp
+[  2%] Built target tf_generate_messages_nodejs
+[  2%] Built target dynamic_reconfigure_generate_messages_py
+[  2%] Built target actionlib_generate_messages_eus
+[  2%] Built target visualization_msgs_generate_messages_lisp
+[  2%] Built target dynamic_reconfigure_generate_messages_cpp
+[  2%] Built target tf_generate_messages_lisp
+[  2%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  2%] Built target tf2_msgs_generate_messages_nodejs
+[  2%] Built target dynamic_reconfigure_generate_messages_eus
+[  2%] Built target dynamic_reconfigure_generate_messages_lisp
+[  2%] Built target dynamic_reconfigure_gencfg
+[  2%] Built target tf_generate_messages_py
+[  2%] Built target actionlib_generate_messages_nodejs
+[  2%] Built target actionlib_msgs_generate_messages_lisp
+[  2%] Built target actionlib_generate_messages_py
+[  2%] Built target visualization_msgs_generate_messages_eus
+[  2%] Built target actionlib_generate_messages_cpp
+[  2%] Built target bond_generate_messages_py
+[  2%] Built target pcl_msgs_generate_messages_eus
+[  2%] Built target actionlib_msgs_generate_messages_nodejs
+[  2%] Built target topic_tools_generate_messages_py
+[  2%] Built target pcl_msgs_generate_messages_cpp
+[  5%] Built target pcl_ros_gencfg
+[  5%] Built target pcl_msgs_generate_messages_lisp
+[  5%] Built target std_srvs_generate_messages_eus
+[  5%] Built target pcl_msgs_generate_messages_py
+[  5%] Built target pcl_msgs_generate_messages_nodejs
+[  5%] Built target topic_tools_generate_messages_nodejs
+[  5%] Built target topic_tools_generate_messages_lisp
+[  5%] Built target nodelet_generate_messages_nodejs
+[  5%] Built target std_srvs_generate_messages_py
+[  5%] Built target std_srvs_generate_messages_cpp
+[  5%] Built target nodelet_generate_messages_eus
+[  5%] Built target bond_generate_messages_nodejs
+[  5%] Built target topic_tools_generate_messages_cpp
+[  5%] Built target bond_generate_messages_eus
+[  5%] Built target std_srvs_generate_messages_nodejs
+[  5%] Built target topic_tools_generate_messages_eus
+[  5%] Built target bond_generate_messages_lisp
+[  5%] Built target bond_generate_messages_cpp
+[  5%] Built target nodelet_generate_messages_py
+[  5%] Built target nodelet_generate_messages_lisp
+[  5%] Built target nodelet_topic_tools_gencfg
+[  5%] Built target nodelet_generate_messages_cpp
+[  5%] Built target std_srvs_generate_messages_lisp
+[  5%] Built target control_msgs_generate_messages_py
+[  5%] Built target control_msgs_generate_messages_cpp
+[  5%] Built target ur_driver_gencfg
+[  6%] Built target pcl_ros_surface
+[  6%] Built target control_msgs_generate_messages_lisp
+[  6%] Built target controller_manager_msgs_generate_messages_eus
+[  6%] Built target control_msgs_generate_messages_eus
+[  6%] Built target controller_manager_msgs_generate_messages_cpp
+[  6%] Built target pcd_to_pointcloud
+[  6%] Built target convert_pcd_to_image
+[  7%] Built target convert_pointcloud_to_image
+[  7%] Built target controller_manager_msgs_generate_messages_py
+[  7%] Built target control_msgs_generate_messages_nodejs
+[  7%] Built target controller_manager_msgs_generate_messages_lisp
+[  7%] Built target trajectory_msgs_generate_messages_cpp
+[  7%] Built target trajectory_msgs_generate_messages_nodejs
+[  7%] Built target controller_manager_msgs_generate_messages_nodejs
+[  7%] Built target trajectory_msgs_generate_messages_py
+[  7%] Built target trajectory_msgs_generate_messages_eus
+[  7%] Built target trajectory_msgs_generate_messages_lisp
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/pcl_ros/samples/data/table_scene_lms400.pcd
+[  7%] Built target table_scene_lms400.pcd
+[  7%] Built target pointcloud_to_pcd
+[  7%] Built target _visp_camera_calibration_generate_messages_check_deps_calibrate
+[  7%] Built target _visp_camera_calibration_generate_messages_check_deps_ImagePoint
+[  8%] Built target ur5_kin
+[  9%] Built target ur3_kin
+[ 10%] Built target ur10_kin
+[ 10%] Built target _visp_camera_calibration_generate_messages_check_deps_ImageAndPoints
+[ 13%] Built target pcl_ros_features
+[ 13%] Built target image_proc_gencfg
+[ 14%] Built target usb_cam
+[ 14%] Built target ur_hardware_interface
+[ 14%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_reset
+[ 14%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_TransformArray
+[ 14%] Built target _visp_camera_calibration_generate_messages_check_deps_CalibPoint
+[ 14%] Built target _visp_camera_calibration_generate_messages_check_deps_CalibPointArray
+[ 14%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick
+[ 14%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera
+[ 14%] Built target _easy_handeye_generate_messages_check_deps_HandeyeCalibration
+[ 14%] Built target _easy_handeye_generate_messages_check_deps_ComputeCalibration
+[ 15%] Built target visp_bridge
+[ 15%] Built target visp_tracker_gencfg
+[ 15%] Built target _easy_handeye_generate_messages_check_deps_RemoveSample
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSite
+[ 15%] Built target _easy_handeye_generate_messages_check_deps_TakeSample
+[ 15%] Built target _easy_handeye_generate_messages_check_deps_SampleList
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_TrackerSettings
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSites
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_KltPoint
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSettings
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_Init
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_KltPoints
+[ 15%] Built target _visp_tracker_generate_messages_check_deps_KltSettings
+[ 16%] Built target gpd_grasp_image
+[ 17%] Built target visp_tracker_viewer
+[ 17%] Built target gpd_clustering
+[ 17%] Built target _gpd_generate_messages_check_deps_SetParameters
+[ 17%] Built target _gpd_generate_messages_check_deps_CloudSources
+[ 17%] Built target _gpd_generate_messages_check_deps_GraspConfig
+[ 17%] Built target _gpd_generate_messages_check_deps_GraspConfigList
+[ 17%] Built target _gpd_generate_messages_check_deps_CloudSamples
+[ 17%] Built target _gpd_generate_messages_check_deps_SamplesMsg
+[ 17%] Built target gpd_classifier
+[ 17%] Built target _gpd_generate_messages_check_deps_CloudIndexed
+[ 17%] Built target serial_example
+[ 19%] Built target ur_msgs_generate_messages_py
+[ 21%] Built target ur_msgs_generate_messages_lisp
+[ 22%] Built target aruco_msgs_generate_messages_lisp
+[ 23%] Built target aruco_msgs_generate_messages_nodejs
+[ 23%] Built target aruco_msgs_generate_messages_py
+[ 24%] Built target aruco_msgs_generate_messages_cpp
+[ 24%] Built target gpd_generate_candidates
+[ 26%] Built target ur_msgs_generate_messages_nodejs
+[ 28%] Built target ur_msgs_generate_messages_cpp
+[ 31%] Built target ur_msgs_generate_messages_eus
+[ 31%] Built target aruco_msgs_generate_messages_eus
+[ 32%] Built target single
+[ 32%] Built target double
+[ 34%] Built target gpd_arm_des_pub
+[ 35%] Built target optimalmarkers
+[ 36%] Built target visp_camera_calibration_generate_messages_eus
+[ 37%] Built target visp_camera_calibration_generate_messages_lisp
+[ 38%] Built target visp_camera_calibration_generate_messages_cpp
+[ 39%] Built target aruco_ros_utils
+[ 40%] Built target pcl_ros_tf
+[ 40%] Built target ur3_moveit_plugin
+[ 40%] Built target ur10_moveit_plugin
+[ 40%] Built target ur5_moveit_plugin
+[ 40%] Built target usb_cam_node
+[ 40%] Built target visp_camera_calibration_gencpp
+[ 41%] Built target visp_hand2eye_calibration_generate_messages_lisp
+[ 42%] Built target visp_hand2eye_calibration_generate_messages_nodejs
+[ 43%] Built target visp_camera_calibration_generate_messages_nodejs
+[ 45%] Built target visp_camera_calibration_generate_messages_py
+[ 47%] Built target visp_hand2eye_calibration_generate_messages_py
+[ 48%] Built target visp_hand2eye_calibration_generate_messages_eus
+[ 48%] Built target visp_hand2eye_calibration_common
+[ 49%] Built target visp_camera_calibration_common
+[ 50%] Built target visp_bridge_convert_camera_parameters
+[ 52%] Built target visp_tracker_generate_messages_cpp
+[ 54%] Built target visp_tracker_generate_messages_lisp
+[ 55%] Built target visp_hand2eye_calibration_generate_messages_cpp
+[ 59%] Built target visp_tracker_generate_messages_py
+[ 59%] Built target visp_tracker_generate_messages_nodejs
+[ 61%] Built target visp_tracker_generate_messages_eus
+[ 62%] Built target gpd_generate_messages_lisp
+[ 62%] Built target aruco_msgs_generate_messages
+[ 62%] Built target gpd_grasp_image_15_channels
+[ 63%] Built target marker_publisher
+[ 65%] Built target gpd_generate_messages_cpp
+[ 67%] Built target bag_to_pcd
+[ 69%] Built target gpd_generate_messages_eus
+[ 71%] Built target gpd_generate_messages_py
+[ 71%] Built target ur_msgs_generate_messages
+[ 73%] Built target gpd_generate_messages_nodejs
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/visp_tracker/bag/tutorial-static-box.bag
+[ 73%] Built target visp_tracker_bag
+[ 73%] Built target visp_camera_calibration_generate_messages
+[ 73%] Built target visp_hand2eye_calibration_generate_messages
+[ 73%] Built target visp_hand2eye_calibration_gencpp
+[ 75%] Built target ur_driver
+[ 77%] Built target easy_handeye_generate_messages_py
+[ 78%] Built target easy_handeye_generate_messages_cpp
+[ 79%] Built target easy_handeye_generate_messages_nodejs
+[ 81%] Built target easy_handeye_generate_messages_eus
+[ 82%] Built target easy_handeye_generate_messages_lisp
+[ 83%] Built target visp_camera_calibration_calibrator
+[ 83%] Built target visp_camera_calibration_camera
+[ 83%] Built target visp_tracker_gencpp
+[ 83%] Built target visp_tracker_generate_messages
+[ 83%] Built target tracker
+[ 84%] Built target visp_camera_calibration_image_processing
+[ 84%] Built target easy_handeye_generate_messages
+[ 85%] Built target pcl_ros_io
+[ 85%] Built target visp_hand2eye_calibration_calibrator
+[ 85%] Built target gpd_generate_messages
+[ 86%] Built target visp_tracker_client
+[ 87%] Built target gpd_learning
+[ 88%] Built target pcl_ros_segmentation
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/visp_auto_tracker/bag/tutorial-qrcode.bag
+[ 88%] Built target visp_auto_tracker_bag
+[ 88%] Built target gpd_data_generator
+[ 89%] Built target visp_hand2eye_calibration_client
+[ 90%] Built target visp_tracker
+[ 92%] Built target pcl_ros_filters
+[ 93%] Built target gpd_create_grasp_images
+[35m[1mScanning dependencies of target plan_grasps_service[0m
+[35m[1mScanning dependencies of target pick_object_demo[0m
+[ 93%] Built target gpd_create_training_data
+[ 93%] Built target gpd_grasp_detector
+[ 94%] Built target gpd_test_occlusion
+[ 94%] Built target download_extra_data
+[ 94%] Built target download
+[ 94%] Built target gpd_sequential_importance_sampling
+[ 95%] Built target trackerNodelet
+[ 96%] Built target gpd_detect_grasps
+[ 96%] Built target visp_auto_tracker_cmd_line
+[ 97%] Built target gpd_classify_candidates
+[ 97%] [32mBuilding CXX object moveit_gpd_pick_object/CMakeFiles/plan_grasps_service.dir/src/plan_grasps_service.cpp.o[0m
+[ 97%] [32mBuilding CXX object moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/src/pick_object_demo.cpp.o[0m
+[ 97%] Built target auto_tracker
+[ 98%] Built target visp_auto_tracker
+[01m[K/home/alienbob/catkin_ws/src/moveit_gpd_pick_object/src/pick_object_demo.cpp:15:45:[m[K [01;31m[Kfatal error: [m[Kmanipulation_msgs/GraspPlanning.h: 没有那个文件或目录
+compilation terminated.
+moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/build.make:62: recipe for target 'moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/src/pick_object_demo.cpp.o' failed
+make[2]: *** [moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/src/pick_object_demo.cpp.o] Error 1
+CMakeFiles/Makefile2:14282: recipe for target 'moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/all' failed
+make[1]: *** [moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/all] Error 2
+make[1]: *** 正在等待未完成的任务....
+[100%] [32m[1mLinking CXX executable /home/alienbob/catkin_ws/devel/lib/moveit_gpd_pick_object/plan_grasps_service[0m
+[100%] Built target plan_grasps_service
+Makefile:138: recipe for target 'all' failed
+make: *** [all] Error 2
+[31mInvoking [1m"make -j12 -l12"[22m failed[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ catkin_make
+Base path: /home/alienbob/catkin_ws
+Source space: /home/alienbob/catkin_ws/src
+Build space: /home/alienbob/catkin_ws/build
+Devel space: /home/alienbob/catkin_ws/devel
+Install space: /home/alienbob/catkin_ws/install
+[34m####[0m
+[34m#### Running command: [1m"make cmake_check_build_system"[0m[34m in [1m"/home/alienbob/catkin_ws/build"[0m
+[34m####[0m
+[34m####[0m
+[34m#### Running command: [1m"make -j12 -l12"[0m[34m in [1m"/home/alienbob/catkin_ws/build"[0m
+[34m####[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_py
+[  1%] Built target serial
+[  1%] Built target std_msgs_generate_messages_eus
+[  1%] Built target geometry_msgs_generate_messages_eus
+[  1%] Built target geometry_msgs_generate_messages_cpp
+[  1%] Built target geometry_msgs_generate_messages_lisp
+[  1%] Built target std_msgs_generate_messages_lisp
+[  2%] Built target aruco
+[  2%] Built target std_msgs_generate_messages_nodejs
+[  2%] Built target geometry_msgs_generate_messages_nodejs
+[  2%] Built target aruco_ros_gencfg
+[  2%] Built target _aruco_msgs_generate_messages_check_deps_Marker
+[  2%] Built target _aruco_msgs_generate_messages_check_deps_MarkerArray
+[  2%] Built target _ur_msgs_generate_messages_check_deps_ToolDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_RobotModeDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_MasterboardDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_SetIO
+[  2%] Built target actionlib_msgs_generate_messages_py
+[  2%] Built target _ur_msgs_generate_messages_check_deps_SetPayload
+[  3%] Built target aruco_ros_utils
+[  3%] Built target _ur_msgs_generate_messages_check_deps_IOStates
+[  3%] Built target _ur_msgs_generate_messages_check_deps_Analog
+[  3%] Built target roscpp_generate_messages_py
+[  3%] Built target _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
+[  3%] Built target rosgraph_msgs_generate_messages_eus
+[  3%] Built target sensor_msgs_generate_messages_nodejs
+[  3%] Built target roscpp_generate_messages_cpp
+[  3%] Built target double
+[  3%] Built target rosgraph_msgs_generate_messages_nodejs
+[  3%] Built target roscpp_generate_messages_eus
+[  3%] Built target rosgraph_msgs_generate_messages_lisp
+[  3%] Built target roscpp_generate_messages_lisp
+[  3%] Built target roscpp_generate_messages_nodejs
+[  3%] Built target rosgraph_msgs_generate_messages_py
+[  3%] Built target _ur_msgs_generate_messages_check_deps_Digital
+[  3%] Built target sensor_msgs_generate_messages_py
+[  3%] Built target sensor_msgs_generate_messages_eus
+[  3%] Built target sensor_msgs_generate_messages_lisp
+[  3%] Built target sensor_msgs_generate_messages_cpp
+[  3%] Built target rosgraph_msgs_generate_messages_cpp
+[  3%] Built target visualization_msgs_generate_messages_nodejs
+[  3%] Built target visualization_msgs_generate_messages_cpp
+[  3%] Built target visualization_msgs_generate_messages_py
+[  3%] Built target tf2_msgs_generate_messages_lisp
+[  3%] Built target tf2_msgs_generate_messages_py
+[  3%] Built target tf_generate_messages_nodejs
+[  3%] Built target tf2_msgs_generate_messages_eus
+[  3%] Built target tf_generate_messages_eus
+[  3%] Built target actionlib_msgs_generate_messages_eus
+[  3%] Built target actionlib_msgs_generate_messages_cpp
+[  3%] Built target actionlib_generate_messages_lisp
+[  3%] Built target tf2_msgs_generate_messages_cpp
+[  3%] Built target dynamic_reconfigure_generate_messages_py
+[  3%] Built target tf_generate_messages_cpp
+[  3%] Built target actionlib_generate_messages_eus
+[  3%] Built target visualization_msgs_generate_messages_lisp
+[  3%] Built target dynamic_reconfigure_generate_messages_cpp
+[  3%] Built target dynamic_reconfigure_gencfg
+[  3%] Built target tf2_msgs_generate_messages_nodejs
+[  3%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  3%] Built target tf_generate_messages_lisp
+[  3%] Built target dynamic_reconfigure_generate_messages_lisp
+[  3%] Built target dynamic_reconfigure_generate_messages_eus
+[  3%] Built target tf_generate_messages_py
+[  3%] Built target actionlib_generate_messages_py
+[  3%] Built target visualization_msgs_generate_messages_eus
+[  3%] Built target actionlib_msgs_generate_messages_lisp
+[  3%] Built target actionlib_generate_messages_nodejs
+[  3%] Built target actionlib_msgs_generate_messages_nodejs
+[  3%] Built target pcl_msgs_generate_messages_cpp
+[  3%] Built target bond_generate_messages_py
+[  3%] Built target actionlib_generate_messages_cpp
+[  6%] Built target pcl_ros_gencfg
+[  6%] Built target pcl_msgs_generate_messages_eus
+[  6%] Built target pcl_msgs_generate_messages_lisp
+[  6%] Built target pcl_msgs_generate_messages_py
+[  6%] Built target pcl_msgs_generate_messages_nodejs
+[  6%] Built target std_srvs_generate_messages_eus
+[  6%] Built target topic_tools_generate_messages_nodejs
+[  6%] Built target topic_tools_generate_messages_lisp
+[  6%] Built target topic_tools_generate_messages_py
+[  6%] Built target nodelet_generate_messages_nodejs
+[  6%] Built target std_srvs_generate_messages_cpp
+[  6%] Built target std_srvs_generate_messages_py
+[  6%] Built target bond_generate_messages_cpp
+[  6%] Built target std_srvs_generate_messages_nodejs
+[  6%] Built target nodelet_generate_messages_py
+[  6%] Built target nodelet_generate_messages_eus
+[  6%] Built target bond_generate_messages_nodejs
+[  6%] Built target bond_generate_messages_eus
+[  6%] Built target topic_tools_generate_messages_cpp
+[  6%] Built target bond_generate_messages_lisp
+[  6%] Built target nodelet_generate_messages_cpp
+[  6%] Built target topic_tools_generate_messages_eus
+[  6%] Built target nodelet_generate_messages_lisp
+[  6%] Built target std_srvs_generate_messages_lisp
+[  6%] Built target nodelet_topic_tools_gencfg
+[  6%] Built target ur_driver_gencfg
+[  6%] Built target control_msgs_generate_messages_cpp
+[  6%] Built target pcd_to_pointcloud
+[  6%] Built target control_msgs_generate_messages_py
+[  6%] Built target convert_pcd_to_image
+[  7%] Built target pcl_ros_surface
+[  7%] Built target pointcloud_to_pcd
+[  7%] Built target control_msgs_generate_messages_lisp
+[  8%] Built target convert_pointcloud_to_image
+[  8%] Built target controller_manager_msgs_generate_messages_eus
+[  8%] Built target control_msgs_generate_messages_eus
+[  8%] Built target control_msgs_generate_messages_nodejs
+[  8%] Built target controller_manager_msgs_generate_messages_py
+[  8%] Built target trajectory_msgs_generate_messages_eus
+[  8%] Built target controller_manager_msgs_generate_messages_cpp
+[  8%] Built target trajectory_msgs_generate_messages_cpp
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/visp_tracker/bag/tutorial-static-box.bag
+[  8%] Built target trajectory_msgs_generate_messages_lisp
+[  8%] Built target controller_manager_msgs_generate_messages_lisp
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/pcl_ros/samples/data/table_scene_lms400.pcd
+[  8%] Built target controller_manager_msgs_generate_messages_nodejs
+[  8%] Built target trajectory_msgs_generate_messages_nodejs
+[  8%] Built target visp_tracker_bag
+[  8%] Built target table_scene_lms400.pcd
+[  9%] Built target ur10_kin
+[  9%] Built target trajectory_msgs_generate_messages_py
+[ 10%] Built target ur5_kin
+[ 10%] Built target ur_hardware_interface
+[ 11%] Built target ur3_kin
+[ 12%] Built target usb_cam
+[ 15%] Built target pcl_ros_features
+[ 16%] Built target visp_bridge
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/visp_auto_tracker/bag/tutorial-qrcode.bag
+[ 16%] Built target image_proc_gencfg
+[ 16%] Built target visp_auto_tracker_bag
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_calibrate
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_CalibPoint
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_CalibPointArray
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_ImageAndPoints
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_TransformArray
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_ImagePoint
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_reset
+[ 16%] Built target visp_tracker_gencfg
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_ComputeCalibration
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_HandeyeCalibration
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_RemoveSample
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_SampleList
+[ 16%] Built target _visp_tracker_generate_messages_check_deps_TrackerSettings
+[ 16%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSites
+[ 17%] Built target _easy_handeye_generate_messages_check_deps_TakeSample
+[ 17%] Built target visp_tracker_viewer
+[ 17%] Built target _visp_tracker_generate_messages_check_deps_KltPoint
+[ 17%] Built target _visp_tracker_generate_messages_check_deps_KltPoints
+[ 18%] Built target gpd_grasp_image
+[ 18%] Built target gpd_clustering
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSettings
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSite
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_KltSettings
+[ 18%] Built target gpd_classifier
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_Init
+[ 18%] Built target gpd_generate_candidates
+[ 18%] Built target serial_example
+[ 19%] Built target _gpd_generate_messages_check_deps_GraspConfigList
+[ 19%] Built target optimalmarkers
+[ 20%] Built target aruco_msgs_generate_messages_py
+[ 20%] Built target _gpd_generate_messages_check_deps_CloudSamples
+[ 20%] Built target _gpd_generate_messages_check_deps_GraspConfig
+[ 21%] Built target gpd_arm_des_pub
+[ 22%] Built target aruco_msgs_generate_messages_cpp
+[ 22%] Built target aruco_msgs_generate_messages_eus
+[ 23%] Built target aruco_msgs_generate_messages_lisp
+[ 23%] Built target _gpd_generate_messages_check_deps_CloudSources
+[ 27%] Built target ur_msgs_generate_messages_eus
+[ 28%] Built target ur_msgs_generate_messages_lisp
+[ 30%] Built target ur_msgs_generate_messages_py
+[ 30%] Built target aruco_msgs_generate_messages_nodejs
+[ 32%] Built target ur_msgs_generate_messages_nodejs
+[ 35%] Built target ur_msgs_generate_messages_cpp
+[ 35%] Built target _gpd_generate_messages_check_deps_SamplesMsg
+[ 35%] Built target _gpd_generate_messages_check_deps_CloudIndexed
+[ 35%] Built target _gpd_generate_messages_check_deps_SetParameters
+[ 35%] Built target download_extra_data
+[ 36%] Built target visp_camera_calibration_generate_messages_lisp
+[ 37%] Built target single
+[ 38%] Built target visp_camera_calibration_generate_messages_eus
+[ 40%] Built target visp_camera_calibration_generate_messages_py
+[ 41%] Built target visp_camera_calibration_generate_messages_cpp
+[ 42%] Built target pcl_ros_tf
+[ 42%] Built target usb_cam_node
+[ 42%] Built target ur5_moveit_plugin
+[ 42%] Built target ur10_moveit_plugin
+[ 43%] Built target visp_bridge_convert_camera_parameters
+[ 44%] Built target visp_camera_calibration_generate_messages_nodejs
+[ 44%] Built target ur3_moveit_plugin
+[ 45%] Built target visp_hand2eye_calibration_generate_messages_eus
+[ 46%] Built target visp_camera_calibration_common
+[ 48%] Built target visp_hand2eye_calibration_generate_messages_py
+[ 49%] Built target visp_hand2eye_calibration_generate_messages_cpp
+[ 50%] Built target visp_hand2eye_calibration_generate_messages_lisp
+[ 51%] Built target visp_hand2eye_calibration_generate_messages_nodejs
+[ 53%] Built target visp_tracker_generate_messages_eus
+[ 55%] Built target visp_tracker_generate_messages_cpp
+[ 55%] Built target visp_hand2eye_calibration_common
+[ 57%] Built target visp_tracker_generate_messages_lisp
+[ 59%] Built target visp_tracker_generate_messages_py
+[ 61%] Built target visp_tracker_generate_messages_nodejs
+[ 62%] Built target gpd_generate_messages_lisp
+[ 64%] Built target gpd_generate_messages_py
+[ 64%] Built target ur_msgs_generate_messages
+[ 64%] Built target aruco_msgs_generate_messages
+[ 67%] Built target gpd_generate_messages_eus
+[ 67%] Built target gpd_grasp_image_15_channels
+[ 69%] Built target gpd_generate_messages_nodejs
+[ 71%] Built target gpd_generate_messages_cpp
+[ 71%] Built target download
+[ 71%] Built target visp_hand2eye_calibration_generate_messages
+[ 72%] Built target marker_publisher
+[ 72%] Built target visp_camera_calibration_generate_messages
+[ 73%] Built target bag_to_pcd
+[ 73%] Built target visp_hand2eye_calibration_gencpp
+[ 73%] Built target visp_camera_calibration_gencpp
+[ 74%] Built target easy_handeye_generate_messages_nodejs
+[ 76%] Built target ur_driver
+[ 77%] Built target pcl_ros_io
+[ 79%] Built target easy_handeye_generate_messages_py
+[ 80%] Built target pcl_ros_segmentation
+[ 80%] Built target tracker
+[ 81%] Built target easy_handeye_generate_messages_cpp
+[ 82%] Built target easy_handeye_generate_messages_lisp
+[ 83%] Built target visp_tracker_client
+[ 85%] Built target easy_handeye_generate_messages_eus
+[ 85%] Built target visp_tracker_gencpp
+[ 85%] Built target visp_tracker_generate_messages
+[ 85%] Built target gpd_generate_messages
+[ 85%] Built target easy_handeye_generate_messages
+[ 86%] Built target visp_camera_calibration_calibrator
+[ 87%] Built target visp_camera_calibration_image_processing
+[ 87%] Built target visp_hand2eye_calibration_calibrator
+[ 88%] Built target visp_hand2eye_calibration_client
+[ 88%] Built target visp_camera_calibration_camera
+[ 90%] Built target pcl_ros_filters
+[ 91%] Built target gpd_learning
+[35m[1mScanning dependencies of target pick_object_demo[0m
+[ 92%] Built target visp_tracker
+[ 93%] Built target plan_grasps_service
+[ 93%] Built target gpd_grasp_detector
+[ 93%] [32mBuilding CXX object moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/src/pick_object_demo.cpp.o[0m
+[ 94%] Built target gpd_test_occlusion
+[ 95%] Built target gpd_create_grasp_images
+[ 95%] Built target gpd_data_generator
+[ 95%] Built target gpd_sequential_importance_sampling
+[ 96%] Built target trackerNodelet
+[ 96%] Built target gpd_create_training_data
+[ 97%] Built target gpd_detect_grasps
+[ 97%] Built target visp_auto_tracker_cmd_line
+[ 98%] Built target gpd_classify_candidates
+[ 98%] Built target auto_tracker
+[100%] Built target visp_auto_tracker
+[100%] [32m[1mLinking CXX executable /home/alienbob/catkin_ws/devel/lib/moveit_gpd_pick_object/pick_object_demo[0m
+[100%] Built target pick_object_demo
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ catkin_make
+Base path: /home/alienbob/catkin_ws
+Source space: /home/alienbob/catkin_ws/src
+Build space: /home/alienbob/catkin_ws/build
+Devel space: /home/alienbob/catkin_ws/devel
+Install space: /home/alienbob/catkin_ws/install
+[34m####[0m
+[34m#### Running command: [1m"make cmake_check_build_system"[0m[34m in [1m"/home/alienbob/catkin_ws/build"[0m
+[34m####[0m
+[34m####[0m
+[34m#### Running command: [1m"make -j12 -l12"[0m[34m in [1m"/home/alienbob/catkin_ws/build"[0m
+[34m####[0m
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  1%] Built target serial
+[  1%] Built target std_msgs_generate_messages_py
+[  1%] Built target std_msgs_generate_messages_cpp
+[  1%] Built target geometry_msgs_generate_messages_py
+[  1%] Built target geometry_msgs_generate_messages_eus
+[  1%] Built target std_msgs_generate_messages_eus
+[  1%] Built target geometry_msgs_generate_messages_lisp
+[  1%] Built target std_msgs_generate_messages_lisp
+[  2%] Built target aruco
+[  2%] Built target geometry_msgs_generate_messages_nodejs
+[  2%] Built target std_msgs_generate_messages_nodejs
+[  2%] Built target _aruco_msgs_generate_messages_check_deps_MarkerArray
+[  2%] Built target aruco_ros_gencfg
+[  2%] Built target _aruco_msgs_generate_messages_check_deps_Marker
+[  2%] Built target _ur_msgs_generate_messages_check_deps_SetIO
+[  2%] Built target _ur_msgs_generate_messages_check_deps_ToolDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_RobotModeDataMsg
+[  2%] Built target _ur_msgs_generate_messages_check_deps_IOStates
+[  2%] Built target _ur_msgs_generate_messages_check_deps_RobotStateRTMsg
+[  2%] Built target actionlib_msgs_generate_messages_py
+[  2%] Built target _ur_msgs_generate_messages_check_deps_SetPayload
+[  2%] Built target _ur_msgs_generate_messages_check_deps_MasterboardDataMsg
+[  2%] Built target roscpp_generate_messages_py
+[  2%] Built target rosgraph_msgs_generate_messages_eus
+[  2%] Built target sensor_msgs_generate_messages_nodejs
+[  2%] Built target rosgraph_msgs_generate_messages_nodejs
+[  2%] Built target _ur_msgs_generate_messages_check_deps_Analog
+[  3%] Built target aruco_ros_utils
+[  3%] Built target roscpp_generate_messages_cpp
+[  3%] Built target rosgraph_msgs_generate_messages_py
+[  3%] Built target rosgraph_msgs_generate_messages_lisp
+[  3%] Built target roscpp_generate_messages_eus
+[  3%] Built target _ur_msgs_generate_messages_check_deps_Digital
+[  3%] Built target roscpp_generate_messages_lisp
+[  3%] Built target roscpp_generate_messages_nodejs
+[  3%] Built target rosgraph_msgs_generate_messages_cpp
+[  3%] Built target sensor_msgs_generate_messages_eus
+[  3%] Built target visualization_msgs_generate_messages_py
+[  3%] Built target sensor_msgs_generate_messages_lisp
+[  3%] Built target visualization_msgs_generate_messages_nodejs
+[  3%] Built target sensor_msgs_generate_messages_cpp
+[  3%] Built target sensor_msgs_generate_messages_py
+[  3%] Built target visualization_msgs_generate_messages_cpp
+[  3%] Built target tf2_msgs_generate_messages_lisp
+[  3%] Built target tf_generate_messages_nodejs
+[  3%] Built target tf2_msgs_generate_messages_eus
+[  3%] Built target tf2_msgs_generate_messages_py
+[  3%] Built target actionlib_generate_messages_lisp
+[  3%] Built target actionlib_msgs_generate_messages_eus
+[  3%] Built target tf_generate_messages_cpp
+[  3%] Built target actionlib_msgs_generate_messages_cpp
+[  3%] Built target actionlib_generate_messages_eus
+[  3%] Built target tf_generate_messages_eus
+[  3%] Built target visualization_msgs_generate_messages_lisp
+[  3%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  3%] Built target dynamic_reconfigure_generate_messages_py
+[  3%] Built target dynamic_reconfigure_generate_messages_cpp
+[  3%] Built target tf2_msgs_generate_messages_cpp
+[  3%] Built target tf2_msgs_generate_messages_nodejs
+[  3%] Built target tf_generate_messages_lisp
+[  3%] Built target dynamic_reconfigure_gencfg
+[  3%] Built target tf_generate_messages_py
+[  3%] Built target dynamic_reconfigure_generate_messages_lisp
+[  3%] Built target dynamic_reconfigure_generate_messages_eus
+[  3%] Built target visualization_msgs_generate_messages_eus
+[  3%] Built target actionlib_generate_messages_cpp
+[  3%] Built target actionlib_msgs_generate_messages_lisp
+[  3%] Built target actionlib_generate_messages_py
+[  3%] Built target actionlib_msgs_generate_messages_nodejs
+[  3%] Built target actionlib_generate_messages_nodejs
+[  6%] Built target pcl_ros_gencfg
+[  6%] Built target bond_generate_messages_py
+[  6%] Built target pcl_msgs_generate_messages_cpp
+[  6%] Built target pcl_msgs_generate_messages_eus
+[  6%] Built target pcl_msgs_generate_messages_py
+[  6%] Built target pcl_msgs_generate_messages_nodejs
+[  6%] Built target pcl_msgs_generate_messages_lisp
+[  6%] Built target topic_tools_generate_messages_nodejs
+[  6%] Built target topic_tools_generate_messages_py
+[  6%] Built target std_srvs_generate_messages_cpp
+[  6%] Built target nodelet_generate_messages_nodejs
+[  6%] Built target std_srvs_generate_messages_eus
+[  6%] Built target topic_tools_generate_messages_lisp
+[  6%] Built target std_srvs_generate_messages_py
+[  6%] Built target std_srvs_generate_messages_nodejs
+[  6%] Built target nodelet_generate_messages_py
+[  6%] Built target bond_generate_messages_cpp
+[  6%] Built target bond_generate_messages_nodejs
+[  6%] Built target bond_generate_messages_eus
+[  6%] Built target topic_tools_generate_messages_cpp
+[  6%] Built target nodelet_generate_messages_eus
+[  6%] Built target topic_tools_generate_messages_eus
+[  6%] Built target nodelet_generate_messages_lisp
+[  6%] Built target nodelet_generate_messages_cpp
+[  6%] Built target bond_generate_messages_lisp
+[  6%] Built target std_srvs_generate_messages_lisp
+[  6%] Built target nodelet_topic_tools_gencfg
+[  6%] Built target ur_driver_gencfg
+[  6%] Built target pcd_to_pointcloud
+[  6%] Built target convert_pcd_to_image
+[  6%] Built target pointcloud_to_pcd
+[  7%] Built target pcl_ros_surface
+[  7%] Built target control_msgs_generate_messages_py
+[  7%] Built target control_msgs_generate_messages_cpp
+[  8%] Built target convert_pointcloud_to_image
+[  8%] Built target control_msgs_generate_messages_lisp
+[  8%] Built target controller_manager_msgs_generate_messages_cpp
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/visp_tracker/bag/tutorial-static-box.bag
+[  8%] Built target controller_manager_msgs_generate_messages_eus
+[  8%] Built target control_msgs_generate_messages_eus
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/pcl_ros/samples/data/table_scene_lms400.pcd
+[  8%] Built target control_msgs_generate_messages_nodejs
+[  8%] Built target controller_manager_msgs_generate_messages_py
+[  8%] Built target controller_manager_msgs_generate_messages_lisp
+[  8%] Built target visp_tracker_bag
+[  8%] Built target trajectory_msgs_generate_messages_cpp
+[  8%] Built target table_scene_lms400.pcd
+[  8%] Built target trajectory_msgs_generate_messages_lisp
+[  8%] Built target trajectory_msgs_generate_messages_eus
+[  8%] Built target controller_manager_msgs_generate_messages_nodejs
+[  8%] Built target trajectory_msgs_generate_messages_py
+[  9%] Built target ur3_kin
+[  9%] Built target trajectory_msgs_generate_messages_nodejs
+[ 10%] Built target ur10_kin
+[ 10%] Built target ur_hardware_interface
+[ 11%] Built target ur5_kin
+[ 12%] Built target usb_cam
+[ 13%] Built target visp_bridge
+Checking md5sum on /home/alienbob/catkin_ws/devel/share/visp_auto_tracker/bag/tutorial-qrcode.bag
+[ 16%] Built target pcl_ros_features
+[ 16%] Built target visp_auto_tracker_bag
+[ 16%] Built target image_proc_gencfg
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_TransformArray
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_calibrate
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_ImagePoint
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_reset
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_ImageAndPoints
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera_quick
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_CalibPoint
+[ 16%] Built target _visp_camera_calibration_generate_messages_check_deps_CalibPointArray
+[ 16%] Built target _visp_hand2eye_calibration_generate_messages_check_deps_compute_effector_camera
+[ 16%] Built target visp_tracker_gencfg
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_HandeyeCalibration
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_ComputeCalibration
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_RemoveSample
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_SampleList
+[ 16%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSites
+[ 16%] Built target _visp_tracker_generate_messages_check_deps_KltPoint
+[ 16%] Built target _easy_handeye_generate_messages_check_deps_TakeSample
+[ 17%] Built target visp_tracker_viewer
+[ 17%] Built target gpd_clustering
+[ 17%] Built target _visp_tracker_generate_messages_check_deps_TrackerSettings
+[ 17%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSettings
+[ 17%] Built target _visp_tracker_generate_messages_check_deps_KltPoints
+[ 18%] Built target gpd_grasp_image
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_Init
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_MovingEdgeSite
+[ 18%] Built target gpd_classifier
+[ 18%] Built target _visp_tracker_generate_messages_check_deps_KltSettings
+[ 18%] Built target gpd_generate_candidates
+[ 18%] Built target serial_example
+[ 19%] Built target aruco_msgs_generate_messages_py
+[ 20%] Built target optimalmarkers
+[ 20%] Built target _gpd_generate_messages_check_deps_GraspConfig
+[ 21%] Built target aruco_msgs_generate_messages_cpp
+[ 21%] Built target _gpd_generate_messages_check_deps_GraspConfigList
+[ 22%] Built target gpd_arm_des_pub
+[ 22%] Built target _gpd_generate_messages_check_deps_CloudSources
+[ 22%] Built target aruco_msgs_generate_messages_eus
+[ 22%] Built target _gpd_generate_messages_check_deps_CloudSamples
+[ 22%] Built target _gpd_generate_messages_check_deps_SetParameters
+[ 24%] Built target ur_msgs_generate_messages_cpp
+[ 25%] Built target aruco_msgs_generate_messages_nodejs
+[ 25%] Built target aruco_msgs_generate_messages_lisp
+[ 27%] Built target ur_msgs_generate_messages_nodejs
+[ 30%] Built target ur_msgs_generate_messages_eus
+[ 32%] Built target ur_msgs_generate_messages_py
+[ 32%] Built target _gpd_generate_messages_check_deps_SamplesMsg
+[ 35%] Built target ur_msgs_generate_messages_lisp
+[ 35%] Built target _gpd_generate_messages_check_deps_CloudIndexed
+[ 36%] Built target single
+[ 37%] Built target visp_camera_calibration_generate_messages_lisp
+[ 37%] Built target download_extra_data
+[ 38%] Built target visp_camera_calibration_generate_messages_cpp
+[ 39%] Built target visp_camera_calibration_generate_messages_eus
+[ 39%] Built target ur3_moveit_plugin
+[ 39%] Built target usb_cam_node
+[ 39%] Built target ur5_moveit_plugin
+[ 40%] Built target visp_bridge_convert_camera_parameters
+[ 40%] Built target ur10_moveit_plugin
+[ 41%] Built target pcl_ros_tf
+[ 41%] Built target double
+[ 43%] Built target visp_camera_calibration_generate_messages_py
+[ 44%] Built target visp_camera_calibration_common
+[ 45%] Built target visp_camera_calibration_generate_messages_nodejs
+[ 47%] Built target visp_hand2eye_calibration_generate_messages_py
+[ 48%] Built target visp_hand2eye_calibration_generate_messages_nodejs
+[ 48%] Built target visp_hand2eye_calibration_common
+[ 49%] Built target visp_hand2eye_calibration_generate_messages_eus
+[ 50%] Built target visp_hand2eye_calibration_generate_messages_lisp
+[ 51%] Built target visp_hand2eye_calibration_generate_messages_cpp
+[ 55%] Built target visp_tracker_generate_messages_nodejs
+[ 55%] Built target visp_tracker_generate_messages_lisp
+[ 57%] Built target visp_tracker_generate_messages_cpp
+[ 59%] Built target visp_tracker_generate_messages_eus
+[ 61%] Built target gpd_generate_messages_nodejs
+[ 62%] Built target gpd_generate_messages_lisp
+[ 64%] Built target visp_tracker_generate_messages_py
+[ 67%] Built target gpd_generate_messages_eus
+[ 69%] Built target gpd_generate_messages_cpp
+[ 71%] Built target gpd_generate_messages_py
+[ 71%] Built target aruco_msgs_generate_messages
+[ 71%] Built target ur_msgs_generate_messages
+[ 71%] Built target gpd_grasp_image_15_channels
+[ 71%] Built target download
+[ 71%] Built target visp_camera_calibration_generate_messages
+[ 72%] Built target marker_publisher
+[ 72%] Built target visp_hand2eye_calibration_generate_messages
+[ 72%] Built target visp_camera_calibration_gencpp
+[ 73%] Built target easy_handeye_generate_messages_nodejs
+[ 73%] Built target visp_hand2eye_calibration_gencpp
+[ 75%] Built target ur_driver
+[ 76%] Built target bag_to_pcd
+[ 77%] Built target easy_handeye_generate_messages_lisp
+[ 79%] Built target easy_handeye_generate_messages_eus
+[ 80%] Built target easy_handeye_generate_messages_cpp
+[ 81%] Built target pcl_ros_io
+[ 83%] Built target easy_handeye_generate_messages_py
+[ 84%] Built target visp_tracker_client
+[ 84%] Built target visp_tracker_generate_messages
+[ 84%] Built target gpd_generate_messages
+[ 85%] Built target pcl_ros_segmentation
+[ 85%] Built target tracker
+[ 85%] Built target visp_tracker_gencpp
+[ 85%] Built target easy_handeye_generate_messages
+[ 86%] Built target visp_camera_calibration_calibrator
+[ 89%] Built target visp_camera_calibration_image_processing
+[ 89%] Built target pcl_ros_filters
+[ 89%] Built target visp_camera_calibration_camera
+[ 90%] Built target gpd_learning
+[ 90%] Built target visp_hand2eye_calibration_calibrator
+[ 91%] Built target visp_hand2eye_calibration_client
+[35m[1mScanning dependencies of target pick_object_demo[0m
+[ 92%] Built target plan_grasps_service
+[ 92%] Built target gpd_grasp_detector
+[ 93%] Built target gpd_create_grasp_images
+[ 93%] [32mBuilding CXX object moveit_gpd_pick_object/CMakeFiles/pick_object_demo.dir/src/pick_object_demo.cpp.o[0m
+[ 93%] Built target gpd_data_generator
+[ 94%] Built target visp_tracker
+[ 95%] Built target gpd_test_occlusion
+[ 95%] Built target gpd_sequential_importance_sampling
+[ 95%] Built target gpd_create_training_data
+[ 96%] Built target trackerNodelet
+[ 97%] Built target gpd_detect_grasps
+[ 98%] Built target gpd_classify_candidates
+[ 98%] Built target visp_auto_tracker_cmd_line
+[ 98%] Built target auto_tracker
+[100%] Built target visp_auto_tracker
+[100%] [32m[1mLinking CXX executable /home/alienbob/catkin_ws/devel/lib/moveit_gpd_pick_object/pick_object_demo[0m
+[100%] Built target pick_object_demo
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ o[Ko[Kroslaunch  [K[K realsense_camera zr300_nodelet_rgbd.launch 
+... logging to /home/alienbob/.ros/log/035a393a-a148-11e9-b307-c0b6f9fad39f/roslaunch-alienbob-Alienware-15-R4-4232.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/kinetic/share/realsense_camera/launch/zr300_nodelet_rgbd.launch
+[1mstarted roslaunch server http://alienbob-Alienware-15-R4:40139/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/disparity_depth/max_range: 4.0
+ * /camera/disparity_depth/min_range: 0.5
+ * /camera/disparity_registered_sw/max_range: 4.0
+ * /camera/disparity_registered_sw/min_range: 0.5
+ * /camera/driver/base_frame_id: camera_link
+ * /camera/driver/camera_type: ZR300
+ * /camera/driver/color_fps: 30
+ * /camera/driver/color_frame_id: camera_rgb_frame
+ * /camera/driver/color_height: 480
+ * /camera/driver/color_optical_frame_id: camera_rgb_optica...
+ * /camera/driver/color_width: 640
+ * /camera/driver/depth_fps: 30
+ * /camera/driver/depth_frame_id: camera_depth_frame
+ * /camera/driver/depth_height: 360
+ * /camera/driver/depth_optical_frame_id: camera_depth_opti...
+ * /camera/driver/depth_width: 480
+ * /camera/driver/enable_color: True
+ * /camera/driver/enable_depth: True
+ * /camera/driver/enable_fisheye: True
+ * /camera/driver/enable_imu: True
+ * /camera/driver/enable_ir2: True
+ * /camera/driver/enable_ir: True
+ * /camera/driver/enable_pointcloud: False
+ * /camera/driver/enable_tf: True
+ * /camera/driver/fisheye_frame_id: camera_fisheye_frame
+ * /camera/driver/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/driver/imu_frame_id: camera_imu_frame
+ * /camera/driver/imu_optical_frame_id: camera_imu_optica...
+ * /camera/driver/ir2_frame_id: camera_ir2_frame
+ * /camera/driver/ir2_optical_frame_id: camera_ir2_optica...
+ * /camera/driver/ir_frame_id: camera_ir_frame
+ * /camera/driver/ir_optical_frame_id: camera_ir_optical...
+ * /camera/driver/mode: manual
+ * /camera/driver/serial_no: 
+ * /camera/driver/usb_port_id: 
+ * /camera/points_xyzrgb_sw_registered/queue_size: 100
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    disparity_depth (nodelet/nodelet)
+    disparity_registered_sw (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    ir_rectify_ir (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_debayer (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+    rgb_rectify_mono (nodelet/nodelet)
+
+auto-starting new master
+[1mprocess[master]: started with pid [4242][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/ros/kinetic/share/realsense_camera/launch/zr300_nodelet_rgbd.launch http://localhost:11311
+[1msetting /run_id to 035a393a-a148-11e9-b307-c0b6f9fad39f[0m
+[1mprocess[rosout-1]: started with pid [4258][0m
+started core service [/rosout]
+[1mprocess[camera/camera_nodelet_manager-2]: started with pid [4272][0m
+[1mprocess[camera/driver-3]: started with pid [4277][0m
+[1mprocess[camera/rgb_debayer-4]: started with pid [4278][0m
+[1mprocess[camera/rgb_rectify_mono-5]: started with pid [4284][0m
+[1mprocess[camera/rgb_rectify_color-6]: started with pid [4293][0m
+[1mprocess[camera/ir_rectify_ir-7]: started with pid [4305][0m
+[1mprocess[camera/depth_rectify_depth-8]: started with pid [4309][0m
+[1mprocess[camera/depth_metric_rect-9]: started with pid [4320][0m
+[1mprocess[camera/depth_metric-10]: started with pid [4332][0m
+[0m[ INFO] [1562566628.462995837]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera/depth_points-11]: started with pid [4364][0m
+[1mprocess[camera/register_depth_rgb-12]: started with pid [4377][0m
+[1mprocess[camera/points_xyzrgb_sw_registered-13]: started with pid [4389][0m
+[1mprocess[camera/depth_registered_sw_metric_rect-14]: started with pid [4392][0m
+[1mprocess[camera/disparity_depth-15]: started with pid [4402][0m
+[1mprocess[camera/disparity_registered_sw-16]: started with pid [4407][0m
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter ; 1.29.0.0
+Intel RealSense ZR300_camera ; 2.0.71.28
+Intel RealSense ZR300_motion_module ; 1.25.0.0
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter ; 1.29.0.0
+Intel RealSense ZR300_camera ; 2.0.71.28
+Intel RealSense ZR300_motion_module ; 1.25.0.0
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter ; 1.29.0.0
+Intel RealSense ZR300_camera ; 2.0.71.28
+Intel RealSense ZR300_motion_module ; 1.25.0.0
+[0m[ INFO] [1562566629.138925269]: /camera/driver - Detected the following camera:
+				- Serial No: 3511804392, USB Port ID: 2-6-2, Name: Intel RealSense ZR300, Camera FW: 2.0.71.28, Adapter FW: 1.29.0.0, Motion Module FW: 1.25.0.0[0m
+[0m[ INFO] [1562566629.139018165]: /camera/driver - Connecting to camera with Serial No: 3511804392, USB Port ID: 2-6-2[0m
+[0m[ INFO] [1562566629.485775871]: /camera/driver - Setting static camera options[0m
+[0m[ INFO] [1562566629.493463934]: /camera/driver - Enabling Depth in manual mode[0m
+[0m[ INFO] [1562566629.493807369]: /camera/driver - Enabling Color in manual mode[0m
+[0m[ INFO] [1562566629.494296425]: /camera/driver - Enabling IR in manual mode[0m
+[0m[ INFO] [1562566629.494426701]: /camera/driver - Enabling IR2 in manual mode[0m
+[0m[ INFO] [1562566629.494600059]: /camera/driver - Enabling Fisheye in manual mode[0m
+[0m[ INFO] [1562566629.494805142]: /camera/driver - Enabling IMU[0m
+[0m[ INFO] [1562566629.494833892]: /camera/driver - Starting camera[0m
+[33m[ WARN] [1562566629.915395449]: /camera/driver - Using Hardcoded extrinsic for IMU.[0m
+[0m[ INFO] [1562566629.915554496]: /camera/driver - Publishing camera transforms (/tf_static)[0m
+[0m[ INFO] [1562566629.915891205]: /camera/driver - Setting dynamic camera options (r200_dc_preset=5)[0m
+[0m[ INFO] [1562566632.146792325]: /camera/driver - Initializing Depth Control Preset to 5[0m
+[0m[ INFO] [1562566633.613893977]: /camera/driver - Setting dynamic camera options[0m
+^C[camera/disparity_registered_sw-16] killing on exit
+[camera/disparity_depth-15] killing on exit
+[camera/depth_registered_sw_metric_rect-14] killing on exit
+[camera/points_xyzrgb_sw_registered-13] killing on exit
+[camera/register_depth_rgb-12] killing on exit
+[camera/depth_points-11] killing on exit
+[camera/depth_metric-10] killing on exit
+[camera/depth_metric_rect-9] killing on exit
+[camera/depth_rectify_depth-8] killing on exit
+[camera/ir_rectify_ir-7] killing on exit
+[camera/rgb_rectify_color-6] killing on exit
+[camera/rgb_rectify_mono-5] killing on exit
+[camera/rgb_debayer-4] killing on exit
+[camera/driver-3] killing on exit
+[camera/camera_nodelet_manager-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ [K]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ roslaunch realsense_camera zr300_nodelet_rgbd.launch 
+... logging to /home/alienbob/.ros/log/db539a8c-a14a-11e9-b307-c0b6f9fad39f/roslaunch-alienbob-Alienware-15-R4-10119.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/kinetic/share/realsense_camera/launch/zr300_nodelet_rgbd.launch
+[1mstarted roslaunch server http://alienbob-Alienware-15-R4:39341/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/disparity_depth/max_range: 4.0
+ * /camera/disparity_depth/min_range: 0.5
+ * /camera/disparity_registered_sw/max_range: 4.0
+ * /camera/disparity_registered_sw/min_range: 0.5
+ * /camera/driver/base_frame_id: camera_link
+ * /camera/driver/camera_type: ZR300
+ * /camera/driver/color_fps: 30
+ * /camera/driver/color_frame_id: camera_rgb_frame
+ * /camera/driver/color_height: 480
+ * /camera/driver/color_optical_frame_id: camera_rgb_optica...
+ * /camera/driver/color_width: 640
+ * /camera/driver/depth_fps: 30
+ * /camera/driver/depth_frame_id: camera_depth_frame
+ * /camera/driver/depth_height: 360
+ * /camera/driver/depth_optical_frame_id: camera_depth_opti...
+ * /camera/driver/depth_width: 480
+ * /camera/driver/enable_color: True
+ * /camera/driver/enable_depth: True
+ * /camera/driver/enable_fisheye: True
+ * /camera/driver/enable_imu: True
+ * /camera/driver/enable_ir2: True
+ * /camera/driver/enable_ir: True
+ * /camera/driver/enable_pointcloud: False
+ * /camera/driver/enable_tf: True
+ * /camera/driver/fisheye_frame_id: camera_fisheye_frame
+ * /camera/driver/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/driver/imu_frame_id: camera_imu_frame
+ * /camera/driver/imu_optical_frame_id: camera_imu_optica...
+ * /camera/driver/ir2_frame_id: camera_ir2_frame
+ * /camera/driver/ir2_optical_frame_id: camera_ir2_optica...
+ * /camera/driver/ir_frame_id: camera_ir_frame
+ * /camera/driver/ir_optical_frame_id: camera_ir_optical...
+ * /camera/driver/mode: manual
+ * /camera/driver/serial_no: 
+ * /camera/driver/usb_port_id: 
+ * /camera/points_xyzrgb_sw_registered/queue_size: 100
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    disparity_depth (nodelet/nodelet)
+    disparity_registered_sw (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    ir_rectify_ir (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_debayer (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+    rgb_rectify_mono (nodelet/nodelet)
+
+auto-starting new master
+[1mprocess[master]: started with pid [10129][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/ros/kinetic/share/realsense_camera/launch/zr300_nodelet_rgbd.launch http://localhost:11311
+[1msetting /run_id to db539a8c-a14a-11e9-b307-c0b6f9fad39f[0m
+[1mprocess[rosout-1]: started with pid [10142][0m
+started core service [/rosout]
+[1mprocess[camera/camera_nodelet_manager-2]: started with pid [10157][0m
+[1mprocess[camera/driver-3]: started with pid [10160][0m
+[1mprocess[camera/rgb_debayer-4]: started with pid [10161][0m
+[1mprocess[camera/rgb_rectify_mono-5]: started with pid [10166][0m
+[1mprocess[camera/rgb_rectify_color-6]: started with pid [10175][0m
+[1mprocess[camera/ir_rectify_ir-7]: started with pid [10178][0m
+[1mprocess[camera/depth_rectify_depth-8]: started with pid [10197][0m
+[0m[ INFO] [1562567849.757919514]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera/depth_metric_rect-9]: started with pid [10214][0m
+[1mprocess[camera/depth_metric-10]: started with pid [10236][0m
+[1mprocess[camera/depth_points-11]: started with pid [10251][0m
+[1mprocess[camera/register_depth_rgb-12]: started with pid [10254][0m
+[1mprocess[camera/points_xyzrgb_sw_registered-13]: started with pid [10262][0m
+[1mprocess[camera/depth_registered_sw_metric_rect-14]: started with pid [10265][0m
+[1mprocess[camera/disparity_depth-15]: started with pid [10287][0m
+[1mprocess[camera/disparity_registered_sw-16]: started with pid [10301][0m
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter ; 1.29.0.0
+Intel RealSense ZR300_camera ; 2.0.71.28
+Intel RealSense ZR300_motion_module ; 1.25.0.0
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter ; 1.29.0.0
+Intel RealSense ZR300_camera ; 2.0.71.28
+Intel RealSense ZR300_motion_module ; 1.25.0.0
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter ; 1.29.0.0
+Intel RealSense ZR300_camera ; 2.0.71.28
+Intel RealSense ZR300_motion_module ; 1.25.0.0
+[0m[ INFO] [1562567850.508739051]: /camera/driver - Detected the following camera:
+				- Serial No: 3511804392, USB Port ID: 2-6-2, Name: Intel RealSense ZR300, Camera FW: 2.0.71.28, Adapter FW: 1.29.0.0, Motion Module FW: 1.25.0.0[0m
+[0m[ INFO] [1562567850.508856413]: /camera/driver - Connecting to camera with Serial No: 3511804392, USB Port ID: 2-6-2[0m
+[0m[ INFO] [1562567850.700130646]: /camera/driver - Setting static camera options[0m
+[0m[ INFO] [1562567850.705202737]: /camera/driver - Enabling Depth in manual mode[0m
+[0m[ INFO] [1562567850.705580354]: /camera/driver - Enabling Color in manual mode[0m
+[0m[ INFO] [1562567850.705984030]: /camera/driver - Enabling IR in manual mode[0m
+[0m[ INFO] [1562567850.706085446]: /camera/driver - Enabling IR2 in manual mode[0m
+[0m[ INFO] [1562567850.706265884]: /camera/driver - Enabling Fisheye in manual mode[0m
+[0m[ INFO] [1562567850.706406466]: /camera/driver - Enabling IMU[0m
+[0m[ INFO] [1562567850.706424588]: /camera/driver - Starting camera[0m
+[33m[ WARN] [1562567851.139141015]: /camera/driver - Using Hardcoded extrinsic for IMU.[0m
+[0m[ INFO] [1562567851.139263196]: /camera/driver - Publishing camera transforms (/tf_static)[0m
+[0m[ INFO] [1562567851.139819624]: /camera/driver - Setting dynamic camera options (r200_dc_preset=5)[0m
+[0m[ INFO] [1562567853.372412061]: /camera/driver - Initializing Depth Control Preset to 5[0m
+[0m[ INFO] [1562567854.969576084]: /camera/driver - Setting dynamic camera options[0m
+^C[camera/disparity_registered_sw-16] killing on exit
+[camera/disparity_depth-15] killing on exit
+[camera/depth_registered_sw_metric_rect-14] killing on exit
+[camera/points_xyzrgb_sw_registered-13] killing on exit
+[camera/register_depth_rgb-12] killing on exit
+[camera/depth_points-11] killing on exit
+[camera/depth_metric-10] killing on exit
+[camera/depth_metric_rect-9] killing on exit
+[camera/depth_rectify_depth-8] killing on exit
+[camera/ir_rectify_ir-7] killing on exit
+[camera/rgb_rectify_color-6] killing on exit
+[camera/rgb_rectify_mono-5] killing on exit
+[camera/rgb_debayer-4] killing on exit
+[camera/camera_nodelet_manager-2] killing on exit
+[camera/driver-3] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+]0;alienbob@alienbob-Alienware-15-R4: ~/catkin_ws[01;32malienbob@alienbob-Alienware-15-R4[00m:[01;34m~/catkin_ws[00m$ roslaunch realsense_camera zr300_nodelet_rgbd.launch 
+... logging to /home/alienbob/.ros/log/7c5c7746-a14b-11e9-b307-c0b6f9fad39f/roslaunch-alienbob-Alienware-15-R4-13819.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/kinetic/share/realsense_camera/launch/zr300_nodelet_rgbd.launch
+[1mstarted roslaunch server http://alienbob-Alienware-15-R4:39773/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /camera/camera_nodelet_manager/num_worker_threads: 4
+ * /camera/depth_rectify_depth/interpolation: 0
+ * /camera/disparity_depth/max_range: 4.0
+ * /camera/disparity_depth/min_range: 0.5
+ * /camera/disparity_registered_sw/max_range: 4.0
+ * /camera/disparity_registered_sw/min_range: 0.5
+ * /camera/driver/base_frame_id: camera_link
+ * /camera/driver/camera_type: ZR300
+ * /camera/driver/color_fps: 30
+ * /camera/driver/color_frame_id: camera_rgb_frame
+ * /camera/driver/color_height: 480
+ * /camera/driver/color_optical_frame_id: camera_rgb_optica...
+ * /camera/driver/color_width: 640
+ * /camera/driver/depth_fps: 30
+ * /camera/driver/depth_frame_id: camera_depth_frame
+ * /camera/driver/depth_height: 360
+ * /camera/driver/depth_optical_frame_id: camera_depth_opti...
+ * /camera/driver/depth_width: 480
+ * /camera/driver/enable_color: True
+ * /camera/driver/enable_depth: True
+ * /camera/driver/enable_fisheye: True
+ * /camera/driver/enable_imu: True
+ * /camera/driver/enable_ir2: True
+ * /camera/driver/enable_ir: True
+ * /camera/driver/enable_pointcloud: False
+ * /camera/driver/enable_tf: True
+ * /camera/driver/fisheye_frame_id: camera_fisheye_frame
+ * /camera/driver/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/driver/imu_frame_id: camera_imu_frame
+ * /camera/driver/imu_optical_frame_id: camera_imu_optica...
+ * /camera/driver/ir2_frame_id: camera_ir2_frame
+ * /camera/driver/ir2_optical_frame_id: camera_ir2_optica...
+ * /camera/driver/ir_frame_id: camera_ir_frame
+ * /camera/driver/ir_optical_frame_id: camera_ir_optical...
+ * /camera/driver/mode: manual
+ * /camera/driver/serial_no: 
+ * /camera/driver/usb_port_id: 
+ * /camera/points_xyzrgb_sw_registered/queue_size: 100
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /camera/
+    camera_nodelet_manager (nodelet/nodelet)
+    depth_metric (nodelet/nodelet)
+    depth_metric_rect (nodelet/nodelet)
+    depth_points (nodelet/nodelet)
+    depth_rectify_depth (nodelet/nodelet)
+    depth_registered_sw_metric_rect (nodelet/nodelet)
+    disparity_depth (nodelet/nodelet)
+    disparity_registered_sw (nodelet/nodelet)
+    driver (nodelet/nodelet)
+    ir_rectify_ir (nodelet/nodelet)
+    points_xyzrgb_sw_registered (nodelet/nodelet)
+    register_depth_rgb (nodelet/nodelet)
+    rgb_debayer (nodelet/nodelet)
+    rgb_rectify_color (nodelet/nodelet)
+    rgb_rectify_mono (nodelet/nodelet)
+
+auto-starting new master
+[1mprocess[master]: started with pid [13829][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/opt/ros/kinetic/share/realsense_camera/launch/zr300_nodelet_rgbd.launch http://localhost:11311
+[1msetting /run_id to 7c5c7746-a14b-11e9-b307-c0b6f9fad39f[0m
+[1mprocess[rosout-1]: started with pid [13842][0m
+started core service [/rosout]
+[1mprocess[camera/camera_nodelet_manager-2]: started with pid [13855][0m
+[1mprocess[camera/driver-3]: started with pid [13860][0m
+[1mprocess[camera/rgb_debayer-4]: started with pid [13861][0m
+[1mprocess[camera/rgb_rectify_mono-5]: started with pid [13863][0m
+[1mprocess[camera/rgb_rectify_color-6]: started with pid [13871][0m
+[1mprocess[camera/ir_rectify_ir-7]: started with pid [13889][0m
+[1mprocess[camera/depth_rectify_depth-8]: started with pid [13903][0m
+[1mprocess[camera/depth_metric_rect-9]: started with pid [13918][0m
+[0m[ INFO] [1562568119.963423467]: Initializing nodelet with 4 worker threads.[0m
+[1mprocess[camera/depth_metric-10]: started with pid [13933][0m
+[1mprocess[camera/depth_points-11]: started with pid [13953][0m
+[1mprocess[camera/register_depth_rgb-12]: started with pid [13958][0m
+[1mprocess[camera/points_xyzrgb_sw_registered-13]: started with pid [13962][0m
+[1mprocess[camera/depth_registered_sw_metric_rect-14]: started with pid [13973][0m
+[1mprocess[camera/disparity_depth-15]: started with pid [13994][0m
+[1mprocess[camera/disparity_registered_sw-16]: started with pid [14003][0m
+Intel RealSense F200_camera ; 2.60.0.0
+Intel RealSense LR200_camera ; 2.0.71.18
+Intel RealSense R200_camera ; 1.0.72.06
+Intel RealSense SR300_camera ; 3.10.10.0
+Intel RealSense ZR300_adapter

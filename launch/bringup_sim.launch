@@ -1,0 +1,7 @@
+<launch> 
+    <!--<node  name="gpd_arm_grasp_pub" pkg="gpd" type="gpd_arm_des_pub" output="screen"/>  -->
+    <include file="$(find realsense_camera)/launch/zr300_nodelet_rgbd.launch"/>  
+    <include file="$(find ur3_e_moveit_config)/launch/ur3_e_moveit_planning_execution.launch"/>    
+    <node  name="camera_to_world" pkg="tf" type="static_transform_publisher" args="0.4 0 0.7 0 1.57 0 /world /camera_link 0.1"/>  
+    <include file="$(find gpd)/launch/tutorial1.launch"/> 
+</launch>
